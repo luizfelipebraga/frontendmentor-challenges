@@ -41,28 +41,37 @@ body
 
   .eyeImage
     transition: .5s ease
-    height: 100px
-    background: #fff
-    opacity: 0
+    z-index: 0
+    height: 3rem
+    width: 3rem
+    display: block
+    top: 25%
+    left: 45%
     position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
-    -ms-transform: translate(-50%, -50%)
-    text-align: center
-  
+
+  .wrap-image
+    cursor: pointer
+    position: relative
+    z-index: 1
+    &:hover
+      border-radius: 8px
+      opacity: 0.6
+      z-index: 1
+      background-color: $cyan
+      img 
+        opacity: 0.3
+
   .image
-    background-image: url('../images/image-equilibrium.jpg')
-    background-position: center /* Center the image */
-    background-repeat: no-repeat /* Do not repeat the image */
-    background-size: cover /* Resize the background image to cover the entire container */
     object-fit: cover
     border-radius: 8px
     height: 15rem
     cursor: pointer
+    width: 100%
+    z-index: -1
+    
     &:hover
-      opacity: 0.4
-  
+      z-index: 0
+
   .title
     font-weight: 600
     font-size: 1.2rem
@@ -70,10 +79,10 @@ body
     cursor: pointer
     &:hover
       color: $cyan
-  
+
   .description
     color: $soft-blue
-  
+
   .additional-infos
     display: flex
     justify-content: space-between
@@ -85,7 +94,7 @@ body
 
   hr
     border: 1px solid $low-blue
-  
+
   header
     display: flex
     align-items: center
@@ -102,12 +111,10 @@ body
       border-radius: 50%
       border: 1px solid $white
 
-
 @media (max-width: 1440px)
   html
-    font-size: 95%
+    font-size: 100%
 
 @media (max-width: 375px)
   html
-    font-size: 80%
-  
+    font-size: 100%

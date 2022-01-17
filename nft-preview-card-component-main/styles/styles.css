@@ -45,32 +45,44 @@ body {
 .card .eyeImage {
   -webkit-transition: .5s ease;
   transition: .5s ease;
-  height: 100px;
-  background: #fff;
-  opacity: 0;
+  z-index: 0;
+  height: 3rem;
+  width: 3rem;
+  display: block;
+  top: 25%;
+  left: 45%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+}
+
+.card .wrap-image {
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.card .wrap-image:hover {
+  border-radius: 8px;
+  opacity: 0.6;
+  z-index: 1;
+  background-color: #00fff7;
+}
+
+.card .wrap-image:hover img {
+  opacity: 0.3;
 }
 
 .card .image {
-  background-image: url("../images/image-equilibrium.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8px;
   height: 15rem;
   cursor: pointer;
+  width: 100%;
+  z-index: -1;
 }
 
 .card .image:hover {
-  opacity: 0.4;
+  z-index: 0;
 }
 
 .card .title {
@@ -139,13 +151,13 @@ body {
 
 @media (max-width: 1440px) {
   html {
-    font-size: 95%;
+    font-size: 100%;
   }
 }
 
 @media (max-width: 375px) {
   html {
-    font-size: 80%;
+    font-size: 100%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
