@@ -38,6 +38,18 @@ body
   padding: 1rem
 
   background: $dark-blue
+
+  .eyeImage
+    transition: .5s ease
+    height: 100px
+    background: #fff
+    opacity: 0
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    -ms-transform: translate(-50%, -50%)
+    text-align: center
   
   .image
     background-image: url('../images/image-equilibrium.jpg')
@@ -48,23 +60,8 @@ body
     border-radius: 8px
     height: 15rem
     cursor: pointer
-    transition: opacity ease-in-out
     &:hover
-      opacity: 0.1;
-      background: $cyan
-      .eyeImage
-        opacity: 1
-  
-  .eyeImage
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-    
+      opacity: 0.4
   
   .title
     font-weight: 600

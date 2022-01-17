@@ -42,6 +42,21 @@ body {
   background: #14253d;
 }
 
+.card .eyeImage {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  height: 100px;
+  background: #fff;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 .card .image {
   background-image: url("../images/image-equilibrium.jpg");
   background-position: center;
@@ -52,30 +67,10 @@ body {
   border-radius: 8px;
   height: 15rem;
   cursor: pointer;
-  -webkit-transition: opacity ease-in-out;
-  transition: opacity ease-in-out;
 }
 
 .card .image:hover {
-  opacity: 0.1;
-  background: #00fff7;
-}
-
-.card .image:hover .eyeImage {
-  opacity: 1;
-}
-
-.card .eyeImage {
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+  opacity: 0.4;
 }
 
 .card .title {
