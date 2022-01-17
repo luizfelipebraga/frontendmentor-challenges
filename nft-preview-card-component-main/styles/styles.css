@@ -109,14 +109,6 @@ body {
           justify-content: space-between;
 }
 
-.card .additional-infos span:first-child {
-  color: #00fff7;
-}
-
-.card .additional-infos span:last-child {
-  color: #8bacda;
-}
-
 .card .wrap-price {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -127,6 +119,10 @@ body {
   gap: 0.3rem;
 }
 
+.card .wrap-price span {
+  color: #00fff7;
+}
+
 .card .wrap-time {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -135,6 +131,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 0.3rem;
+}
+
+.card .wrap-time span {
+  color: #8bacda;
 }
 
 .card hr {
