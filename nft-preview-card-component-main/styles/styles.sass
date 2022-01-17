@@ -17,14 +17,19 @@ body
   background-color: $super-dark-blue
 
   display: flex
+  flex-direction: column
   justify-content: center
   align-items: center
+  gap: 2rem
 
   font-family: 'Outfit', sans-serif
 
 .card
   min-height: 500px
   max-width: 300px
+  border-radius: 8px
+
+  position: relative
 
   display: flex
   flex-direction: column
@@ -33,16 +38,72 @@ body
   padding: 1rem
 
   background: $dark-blue
-
-  img
+  
+  .image
+    background-image: url('../images/image-equilibrium.jpg')
+    background-position: center /* Center the image */
+    background-repeat: no-repeat /* Do not repeat the image */
+    background-size: cover /* Resize the background image to cover the entire container */
     object-fit: cover
+    border-radius: 8px
     height: 15rem
+    cursor: pointer
+    transition: opacity ease-in-out
+    &:hover
+      opacity: 0.1;
+      background: $cyan
+      .eyeImage
+        opacity: 1
+  
+  .eyeImage
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    
   
   .title
-    color: #fff
+    font-weight: 600
+    font-size: 1.2rem
+    color: $white
+    cursor: pointer
+    &:hover
+      color: $cyan
+  
+  .description
+    color: $soft-blue
+  
+  .additional-infos
+    display: flex
+    justify-content: space-between
+    span
+      &:first-child
+        color: $cyan
+      &:last-child
+        color: $soft-blue
 
   hr
-    border: 1px solid $soft-blue
+    border: 1px solid $low-blue
+  
+  header
+    display: flex
+    align-items: center
+    gap: 1rem
+    color: $soft-blue
+    strong
+      cursor: pointer
+      color: $white
+      &:hover
+        color: $cyan
+    img
+      object-fit: cover
+      height: 2.5rem
+      border-radius: 50%
+      border: 1px solid $white
 
 
 @media (max-width: 1440px)

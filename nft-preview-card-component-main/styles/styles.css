@@ -11,18 +11,25 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 2rem;
   font-family: 'Outfit', sans-serif;
 }
 
 .card {
   min-height: 500px;
   max-width: 300px;
+  border-radius: 8px;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,18 +42,104 @@ body {
   background: #14253d;
 }
 
-.card img {
+.card .image {
+  background-image: url("../images/image-equilibrium.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 8px;
   height: 15rem;
+  cursor: pointer;
+  -webkit-transition: opacity ease-in-out;
+  transition: opacity ease-in-out;
+}
+
+.card .image:hover {
+  opacity: 0.1;
+  background: #00fff7;
+}
+
+.card .image:hover .eyeImage {
+  opacity: 1;
+}
+
+.card .eyeImage {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .card .title {
-  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.card .title:hover {
+  color: #00fff7;
+}
+
+.card .description {
+  color: #8bacda;
+}
+
+.card .additional-infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card .additional-infos span:first-child {
+  color: #00fff7;
+}
+
+.card .additional-infos span:last-child {
+  color: #8bacda;
 }
 
 .card hr {
-  border: 1px solid #8bacda;
+  border: 1px solid #2f415b;
+}
+
+.card header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  color: #8bacda;
+}
+
+.card header strong {
+  cursor: pointer;
+  color: white;
+}
+
+.card header strong:hover {
+  color: #00fff7;
+}
+
+.card header img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid white;
 }
 
 @media (max-width: 1440px) {
