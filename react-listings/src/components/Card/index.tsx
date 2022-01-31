@@ -9,10 +9,6 @@ import {
   Footer,
 } from "./styles";
 
-type ToolLanguage = {
-  name: string[];
-};
-
 type CardProps = {
   company: string;
   logo: string;
@@ -32,7 +28,7 @@ export function CardComponent({ ...props }: CardProps) {
   return (
     <Container>
       <WrapUserBox>
-        <Image src={props.logo}/>
+        <Image src={props.logo} alt="image"/>
         <InfoUser>
           <Header>
             <span>{props.company}</span>

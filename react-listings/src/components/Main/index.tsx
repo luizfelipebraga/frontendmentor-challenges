@@ -1,12 +1,12 @@
 import { Attribution, Container } from "./styles";
 
-import Data from "../../services/data.json";
+import {data} from "../../services/data";
 import { CardComponent } from "../Card";
 
 export function MainComponent() {
   return (
     <Container>
-      {Data.map((card) => {
+      {data.map((card) => {
         console.log(card.logo)
         return (
           <CardComponent key={card.id}
