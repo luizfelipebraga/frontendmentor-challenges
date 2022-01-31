@@ -10,7 +10,7 @@ import {
 } from "./styles";
 
 type ToolLanguage = {
-  name: string;
+  name: string[];
 };
 
 type CardProps = {
@@ -24,15 +24,15 @@ type CardProps = {
   postedAt: string;
   contract: string;
   location: string;
-  languages: ToolLanguage[];
-  tools: ToolLanguage[];
+  languages: string[];
+  tools: string[];
 };
 
 export function CardComponent({ ...props }: CardProps) {
   return (
     <Container>
       <WrapUserBox>
-        <Image />
+        <Image src={props.logo}/>
         <InfoUser>
           <Header>
             <span>{props.company}</span>
@@ -54,10 +54,10 @@ export function CardComponent({ ...props }: CardProps) {
         <span>{props.role}</span>
         <span>{props.level}</span>
         {props.languages.map((lang, index) => (
-          <span key={index}>{lang.name}</span>
+          <span key={index}>{lang}</span>
         ))}
         {props.tools.map((tool, index) => (
-          <span key={index}>{tool.name}</span>
+          <span key={index}>{tool}</span>
         ))}
       </StackUserBox>
     </Container>

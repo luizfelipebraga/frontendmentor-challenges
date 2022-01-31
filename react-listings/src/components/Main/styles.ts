@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 
   max-width: 1200px;
   margin-inline: auto; // margin: 0 auto;
+
+  padding: 10rem 0;
 `;
 
 export const Attribution = styled.div`

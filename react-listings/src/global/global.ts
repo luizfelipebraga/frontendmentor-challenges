@@ -6,7 +6,7 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 'Spartan', sans-serif;
+    font-family: 'Spartan', sans-serif;
   }
 
   :root {
@@ -19,6 +19,13 @@ export const GlobalStyles = createGlobalStyle`
     --table: hsl(180, 31%, 95%);
     --dark-cyan: hsl(180, 8%, 52%);
     --bold-cyan: hsl(180, 14%, 20%);
+  }
+
+  body, html, #root {
+    background: var(--background);
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
   }
 
 
