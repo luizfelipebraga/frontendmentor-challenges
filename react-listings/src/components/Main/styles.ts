@@ -4,14 +4,19 @@ export const Container = styled.div`
   min-height: 100vh;
   width: 100%;
 
-  max-width: 1200px;
-  margin-inline: auto; // margin: 0 auto;
+   // margin: 0 auto;
+`;
 
-  padding: 10rem 0;
+export const Box = styled.div`
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 5rem 0 0 .5rem;
 `;
 
 export const Attribution = styled.div`
-  font-size: 11px; 
+  font-size: 1rem; 
   text-align: center;
   color: hsl(228, 45%, 44%);
+
+  margin: 2rem 0;
 `;

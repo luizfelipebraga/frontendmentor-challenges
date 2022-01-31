@@ -1,11 +1,14 @@
 import styled from 'styled-components';
 
+interface ICard {
+  isFeaturedOrNew: boolean;
+}
 
-export const Container = styled.div`
+export const Container = styled.div<ICard>`
   width: 100%;
   background: #fff;
   border-radius: 5px;
-  border-left: 0.25rem solid #1cc88a;
+  border-left: ${({isFeaturedOrNew}) => isFeaturedOrNew && '0.25rem solid var(--primary)'};
 
   margin-top: 1rem;
 
@@ -14,6 +17,9 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 `;
 
 export const WrapUserBox = styled.div`
@@ -30,7 +36,7 @@ export const Image = styled.img`
 export const InfoUser = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: .8rem;
 `;
 
 export const Header = styled.header`
@@ -43,14 +49,27 @@ export const Header = styled.header`
     font-size: .8rem;
     font-weight: 700;
   }
+`;
 
-  button {
+export const BoxNewFeatured = styled.div`
+  border-radius: 1rem;
+  padding: .3rem .5rem;
+  background: var(--bold-cyan);
+  
+  &:nth-child(2) {
+    background: var(--primary);
+  }
+
+  span {
+    font-size: .65rem;
+    color: #fff;
     text-transform: uppercase;
   }
 `;
 
 export const Role = styled.span`
   font-weight: 700;
+  font-size: 1.1rem;
   color: var(--bold-cyan);
 `;
 
@@ -67,6 +86,7 @@ export const StackUserBox = styled.div`
   flex-direction: row;
   gap: 1rem;
   align-items: center;
+  margin-top: 1rem;
 
   span {
     padding: .5rem;

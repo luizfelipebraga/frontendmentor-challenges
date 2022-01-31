@@ -7,13 +7,14 @@ import {
   Header,
   Role,
   Footer,
+  BoxNewFeatured,
 } from "./styles";
 
 type CardProps = {
   company: string;
   logo: string;
-  new?: boolean;
-  featured?: boolean;
+  new: boolean;
+  featured: boolean;
   position: string;
   role: string;
   level: string;
@@ -24,16 +25,26 @@ type CardProps = {
   tools: string[];
 };
 
-export function CardComponent({ ...props }: CardProps) {
+export function CardComponent({ ...props }: CardProps) {  
   return (
-    <Container>
+    <Container isFeaturedOrNew={props.new && props.featured}>
       <WrapUserBox>
-        <Image src={props.logo} alt="image"/>
+        <Image src={props.logo} alt="image" />
         <InfoUser>
           <Header>
             <span>{props.company}</span>
-            {props.new && <button>new</button>}
-            {props.featured && <button>featured</button>}
+
+            {props.new && (
+              <BoxNewFeatured>
+                <span>new!</span>
+              </BoxNewFeatured>
+            )}
+
+            {props.featured && (
+              <BoxNewFeatured>
+                <span>featured</span>
+              </BoxNewFeatured>
+            )}
           </Header>
 
           <Role>{props.position}</Role>
