@@ -29,7 +29,7 @@ export const WrapUserBox = styled.div`
 `;
 
 export const Image = styled.img`
-  height: 3rem;
+  height: 5rem;
   object-fit: cover;
 `;
 
