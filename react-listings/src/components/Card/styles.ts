@@ -86,7 +86,6 @@ export const StackUserBox = styled.div`
   flex-direction: row;
   gap: 1rem;
   align-items: center;
-  margin-top: 1rem;
 
   span {
     padding: .5rem;
@@ -94,5 +93,9 @@ export const StackUserBox = styled.div`
     font-size: .8rem;
     color: var(--primary);
     font-weight: 700;
+  }
+
+  @media(max-width: 768px) {
+    margin-top: 1rem;
   }
 `;
