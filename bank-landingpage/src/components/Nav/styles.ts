@@ -7,7 +7,7 @@ export const Header = styled.header`
   max-width: 1200px;
   margin: 0 auto; //margin: 0 auto;
 
-  padding: 1rem;
+  padding: 2rem;
 
   display: flex;
   flex-direction: row;
@@ -20,6 +20,19 @@ export const Nav = styled.nav`
     display: flex;
     align-items: center;
     gap: 2rem;
+
+    a {
+      color: #878787;
+      transition: all 100ms ease-out;
+
+      &:hover {
+        color: #000;
+        text-decoration-color: var(--lightGreen);
+        text-decoration-line: underline;
+        text-underline-offset: 30px;
+        text-decoration-thickness: 3px;
+      }
+    }
   }
 `;
 
