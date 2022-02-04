@@ -1,13 +1,14 @@
-import Head from "next/head";
-import Image from "next/image";
+import { Content } from "../Content";
+import { Footer } from "../Footer";
 import { NavBar } from "../Nav";
 import { Container } from "./styles";
 
 export function MainComponent() {
   return (
     <Container>
-      <NavBar/>
-      <h1>AAA</h1>
+      <NavBar />
+      <Content />
+      <Footer />
     </Container>
   );
 }
