@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <Attribution>
       <p>Coded by </p>
-      <a href="https://www.frontendmentor.io/profile/luizfelipebraga">Your Name Here</a>.
+      <a href="https://www.frontendmentor.io/profile/luizfelipebraga">Luiz Felipe Braga</a>.
     </Attribution>
   );
 }

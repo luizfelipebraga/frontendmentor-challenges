@@ -1,6 +1,7 @@
+import { Container } from "./styles";
 
 export function AboutuSection() {
   return (
-    <h1>ola</h1>
+    <Container>ola</Container>
   );
 }

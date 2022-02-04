@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Header, Nav } from "./styles";
-import Logo from "./images/logo.svg";
+import Logo from "../../images/logo.svg";
 import Link from "next/link";
 import { RequestButton } from "../RequestButton";
 
