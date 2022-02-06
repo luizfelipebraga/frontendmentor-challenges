@@ -14,13 +14,13 @@ export const Container = styled.section`
 `;
 
 export const Box = styled.div`
-  padding: 10rem 0 0 20rem;
+  padding: 10rem 0 1rem 20rem;
 
   display: flex;
   flex-direction: column;
   gap: 2rem;
   text-align: left;
-  max-width: 780px;
+  max-width: 53rem;
 
   h1 {
     color: var(--darkBlue);
@@ -37,15 +37,14 @@ export const Box = styled.div`
 export const BoxImage = styled.div`
   position: relative;
 
-  background-image: url(${bgImg}); /* The image used */
-  background-position: center; /* Center the image */
+  background-image: url('./images/bg-intro-desktop.svg'); /* The image used */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   
   margin-top: -130px;
-  margin-right: -110px;
 `;
 
 export const ImageStyled = styled(Image)`
   position: absolute;
+  left: 5rem !important;
 `;

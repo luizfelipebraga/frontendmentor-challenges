@@ -1,5 +1,5 @@
 import { Container, Box, BoxImage, ImageStyled } from "./styles";
-import PhonesImg from "./images/image-mockups.png";
+import PhonesImg from '../../../images/image-mockups.png';
 import { RequestButton } from "../../RequestButton";
 
 export function HomeSection() {
@@ -15,12 +15,8 @@ export function HomeSection() {
         <RequestButton style={{ textAlign: "left" }} />
       </Box>
 
-      <BoxImage
-        style={{
-          backgroundImage:
-            "url(" + `${require("./bg-intro-desktop.svg")}` + ")",
-        }}
-      >
+
+      <BoxImage>
         <ImageStyled src={PhonesImg} alt="phone image" />
       </BoxImage>
     </Container>
