@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import bgImg from '../../../images/bg-intro-desktop.svg';
 import Image from "next/image";
 
 export const Container = styled.section`
@@ -10,17 +9,16 @@ export const Container = styled.section`
 
   display: flex;
   justify-content: space-between;
-  gap: 5rem;
 `;
 
 export const Box = styled.div`
-  padding: 10rem 0 1rem 20rem;
+  margin: 10rem 0 1rem 25rem;
 
   display: flex;
   flex-direction: column;
   gap: 2rem;
   text-align: left;
-  max-width: 53rem;
+  max-width: 33rem;
 
   h1 {
     color: var(--darkBlue);
