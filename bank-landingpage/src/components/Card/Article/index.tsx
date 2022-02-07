@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Container, Title, Description, Box, MadeBy } from "./styles";
+import { Container, Title, Description, Box, MadeBy, ImageStyled } from "./styles";
 
 type CardProps = {
   img: string;
@@ -11,7 +11,7 @@ type CardProps = {
 export function CardArticle({ img, title, description, madeBy}: CardProps) {
   return (
     <Container>
-      <Image src={img} width={350} height={300}/>
+      <ImageStyled src={img} width={350} height={300}/>
       <Box>
         <MadeBy>{madeBy}</MadeBy>
         <Title>{title}</Title>
