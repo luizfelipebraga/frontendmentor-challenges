@@ -4,15 +4,15 @@ import Image from 'next/image';
 
 export const Container = styled.div`
   background-color: #fff;
-  padding: 1.5rem;
 `;
 
 export const Box = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
 
-  margin-top: 2rem;
+  margin-top: 1rem;
+  padding: 1.5rem;
 `;
 
 export const ImageStyled = styled(Image)`
