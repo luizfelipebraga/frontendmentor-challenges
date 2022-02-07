@@ -2,14 +2,19 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   height: 100%;
-  max-width: 1200px;
-  margin-inline: auto;
 
   background-color: var(--darkBlue);
+
+  padding: 2rem;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+`;
+
+export const Foot = styled.footer`
+  max-width: 1200px;
+  margin-inline: auto;
 `;
 
 export const BoxInfos = styled.div`
@@ -26,6 +31,6 @@ export const Attribution = styled.div`
   text-align: center;
 
   a {
-    color: hsl(228, 45%, 44%);
+    color: #ffffff;
   }
 `;

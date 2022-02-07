@@ -7,15 +7,13 @@ export const Container = styled.section`
   margin-top: -10rem;
 
   padding: 2rem;
-
 `;
 
 export const Main = styled.main`
   max-width: 1200px;
   margin-inline: auto;
-  background-color: var(--lightGrayBlue);
 
-  padding: 9rem 0;
+  padding: 6rem 0;
 `;
 
 
