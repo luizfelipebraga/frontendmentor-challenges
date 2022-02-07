@@ -11,14 +11,22 @@ export const Container = styled.section`
   justify-content: space-between;
 `;
 
-export const Box = styled.div`
-  margin: 10rem 0 1rem 25rem;
+export const WrapperBox = styled.div`
+  max-width: 1200px;
 
+  flex: 4;
+  display: flex;
+  margin-top: 10rem;
+  justify-content: center;
+`;
+
+export const Box = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
   text-align: left;
   max-width: 33rem;
+  padding-left: 1.5rem;
 
   h1 {
     color: var(--darkBlue);
@@ -27,8 +35,8 @@ export const Box = styled.div`
   }
 
   p {
-    font-size: clamp(1rem, 3vw, 1.3rem);
-    margin-bottom: 2rem;
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    margin-bottom: 1.8rem;
   }
 `;
 

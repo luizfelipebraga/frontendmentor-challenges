@@ -47,6 +47,10 @@ export const GlobalStyle = createGlobalStyle`
     color: #949494;
   }
 
+  p {
+      line-height: 1.8rem;
+  }
+
   b, strong {
       color: #000;
   }
