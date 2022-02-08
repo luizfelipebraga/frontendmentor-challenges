@@ -5,7 +5,7 @@ export const Container = styled.div`
 
   background-color: var(--darkBlue);
 
-  padding: 2rem;
+  padding: 5rem 1rem;
 
   display: flex;
   align-items: center;
@@ -15,22 +15,68 @@ export const Container = styled.div`
 export const Foot = styled.footer`
   max-width: 1200px;
   margin-inline: auto;
-`;
 
-export const BoxInfos = styled.div`
+  width: 100%;
+
   display: flex;
   align-items: center;
-  gap: 5rem;
+  justify-content: space-between;
 `;
 
-export const BoxRequest = styled.div`
+export const Wrapper = styled.div`
+  width: 100%;
+  display: flex;
+  gap: 10rem;
+
+  transition: color 200ms ease-in-out;
+
+  a {
+    color: #f8f8f8;
+
+    &:hover {
+      color: var(--lightGreen);
+    }
+  }
+`;
+
+export const Flex1 = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+`;
+
+export const Flex2 = styled.div`
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const Flex3 = styled.div`
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const SocialMedias = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
 `;
 
 export const Attribution = styled.div`
   font-size: 11px;
   text-align: center;
 
+  p {
+    margin-top: 2.5rem;
+  }
+
   a {
-    color: #ffffff;
+    color: #fff;
+    white-space: nowrap;
   }
 `;

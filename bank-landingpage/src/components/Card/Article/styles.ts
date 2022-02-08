@@ -26,6 +26,13 @@ export const MadeBy = styled.span`
 export const Title = styled.h2`
   color: var(--darkBlue);
   font-weight: 500;
+  cursor: pointer;
+
+  transition: color 200ms ease-in-out;
+
+  &:hover {
+    color: var(--lightGreen);
+  }
 `;
 
 export const Description = styled.p`

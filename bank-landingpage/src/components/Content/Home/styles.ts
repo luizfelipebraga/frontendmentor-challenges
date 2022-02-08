@@ -9,6 +9,10 @@ export const Container = styled.section`
 
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 1220px) {
+    flex-direction: column-reverse;
+  }
 `;
 
 export const WrapperBox = styled.div`
