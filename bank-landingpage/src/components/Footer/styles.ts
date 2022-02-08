@@ -21,6 +21,11 @@ export const Foot = styled.footer`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 1220px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -37,6 +42,11 @@ export const Wrapper = styled.div`
       color: var(--lightGreen);
     }
   }
+
+  @media (max-width: 1220px) {
+    flex-direction: column;
+    gap: 3rem;
+  }
 `;
 
 export const Flex1 = styled.div`
@@ -44,6 +54,10 @@ export const Flex1 = styled.div`
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+
+  @media (max-width: 1220px) {
+    gap: 2rem;
+  }
 `;
 
 export const Flex2 = styled.div`
@@ -78,5 +92,9 @@ export const Attribution = styled.div`
   a {
     color: #fff;
     white-space: nowrap;
+  }
+
+  @media (max-width: 1220px) {
+    margin-top: 4rem;
   }
 `;

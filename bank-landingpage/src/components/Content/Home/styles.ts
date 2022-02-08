@@ -10,8 +10,11 @@ export const Container = styled.section`
   display: flex;
   justify-content: space-between;
 
+  padding: 2rem 0;
+
   @media (max-width: 1220px) {
     flex-direction: column-reverse;
+    padding-bottom: 12rem;
   }
 `;
 
@@ -22,6 +25,11 @@ export const WrapperBox = styled.div`
   display: flex;
   margin-top: 10rem;
   justify-content: center;
+
+  @media (max-width: 1220px) {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
 `;
 
 export const Box = styled.div`
@@ -34,7 +42,7 @@ export const Box = styled.div`
 
   h1 {
     color: var(--darkBlue);
-    font-size: clamp(1.3rem, 5vw, 3.5rem);
+    font-size: clamp(1.5rem, 5vw, 3.5rem);
     font-weight: 400;
   }
 
@@ -45,16 +53,19 @@ export const Box = styled.div`
 `;
 
 export const BoxImage = styled.div`
-  position: relative;
 
   background-image: url('./images/bg-intro-desktop.svg'); /* The image used */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   
   margin-top: -130px;
+
+  @media (max-width: 1220px) {
+    display: none;
+    margin-top: 0;
+  }
 `;
 
 export const ImageStyled = styled(Image)`
-  position: absolute;
   left: 5rem !important;
 `;

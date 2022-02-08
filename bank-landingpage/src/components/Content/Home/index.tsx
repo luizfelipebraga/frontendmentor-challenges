@@ -18,7 +18,7 @@ export function HomeSection() {
       </WrapperBox>
 
       <BoxImage>
-        <ImageStyled src={PhonesImg} alt="phone image" />
+        <ImageStyled src={PhonesImg} alt="phone image" loading="eager" />
       </BoxImage>
     </Container>
   );
